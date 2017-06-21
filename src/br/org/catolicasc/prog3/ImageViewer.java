@@ -21,13 +21,21 @@ public class ImageViewer {
     }
     
     private void makeFrame() {
+        // Cria um novo quadro com o título ImageViewer
         frame = new JFrame("ImageViewer");
+        
+        // Obtém o painel de conteudo (Container) do frame
         Container contentPane = frame.getContentPane();
         
+        // Cria um label - objeto de texto
         JLabel label = new JLabel("Eu sou um label.");
+        // Adiciona o label ao painel
         contentPane.add(label);
         
+        // Organiza e dimensiona os elementos no quadro
         frame.pack();
+        
+        // Torna o quadro visível
         frame.setVisible(true);
     }
 }
